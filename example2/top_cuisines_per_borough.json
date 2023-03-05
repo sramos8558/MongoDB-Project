@@ -1,0 +1,97 @@
+[{
+  "borough": "Brooklyn",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 1273
+    },
+    {
+      "cuisine": "Chinese",
+      "count": 763
+    },
+    {
+      "cuisine": "Caribbean",
+      "count": 314
+    }
+  ]
+},{
+  "borough": "Queens",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 1040
+    },
+    {
+      "cuisine": "Chinese",
+      "count": 728
+    },
+    {
+      "cuisine": "Latin (Cuban, Dominican, Puerto Rican, South & Central American)",
+      "count": 300
+    }
+  ]
+},{
+  "borough": "Missing",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 10
+    },
+    {
+      "cuisine": "Chicken",
+      "count": 9
+    },
+    {
+      "cuisine": "Chinese",
+      "count": 6
+    }
+  ]
+},{
+  "borough": "Bronx",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 411
+    },
+    {
+      "cuisine": "Chinese",
+      "count": 323
+    },
+    {
+      "cuisine": "Pizza",
+      "count": 197
+    }
+  ]
+},{
+  "borough": "Staten Island",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 244
+    },
+    {
+      "cuisine": "Chinese",
+      "count": 88
+    },
+    {
+      "cuisine": "Italian",
+      "count": 73
+    }
+  ]
+},{
+  "borough": "Manhattan",
+  "topCuisines": [
+    {
+      "cuisine": "American",
+      "count": 3205
+    },
+    {
+      "cuisine": "Café/Coffee/Tea",
+      "count": 680
+    },
+    {
+      "cuisine": "Italian",
+      "count": 621
+    }
+  ]
+}]
