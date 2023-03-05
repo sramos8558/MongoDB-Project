@@ -1,0 +1,63 @@
+[
+    {
+        '$match': {
+            'cuisine': 'Pizza'
+        }
+    }, {
+        '$addFields': {
+            'avgScore': {
+                '$avg': '$grades.score'
+            }
+        }
+    }, {
+        '$group': {
+            '_id': '$borough', 
+            'avgScoreByBorough': {
+                '$avg': '$avgScore'
+            }
+        }
+    }, {
+        '$addFields': {
+            'avgScoreByBorough': {
+                '$round': [
+                    '$avgScoreByBorough', 2
+                ]
+            }, 
+            'grade': {
+                '$switch': {
+                    'branches': [
+                        {
+                            'case': {
+                                '$lte': [
+                                    '$avgScoreByBorough', 13
+                                ]
+                            }, 
+                            'then': 'A'
+                        }, {
+                            'case': {
+                                '$lte': [
+                                    '$avgScoreByBorough', 27
+                                ]
+                            }, 
+                            'then': 'B'
+                        }, {
+                            'case': {
+                                '$gte': [
+                                    '$avgScoreByBorough', 28
+                                ]
+                            }, 
+                            'then': 'C'
+                        }
+                    ]
+                }
+            }
+        }
+    }, {
+        '$project': {
+            '_id': 0, 
+            'borough': '$_id', 
+            'grade': 1, 
+            'avgScoreByBorough': 1
+        }
+    }
+]

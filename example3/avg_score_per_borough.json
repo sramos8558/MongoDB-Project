@@ -1,0 +1,25 @@
+[{
+  "avgScoreByBorough": 11.56,
+  "grade": "A",
+  "borough": "Manhattan"
+},{
+  "avgScoreByBorough": 11.05,
+  "grade": "A",
+  "borough": "Queens"
+},{
+  "avgScoreByBorough": 11.09,
+  "grade": "A",
+  "borough": "Staten Island"
+},{
+  "avgScoreByBorough": 9.5,
+  "grade": "A",
+  "borough": "Missing"
+},{
+  "avgScoreByBorough": 10.39,
+  "grade": "A",
+  "borough": "Bronx"
+},{
+  "avgScoreByBorough": 10.78,
+  "grade": "A",
+  "borough": "Brooklyn"
+}]
